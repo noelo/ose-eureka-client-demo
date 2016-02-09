@@ -16,7 +16,7 @@ eureka:
   instance:
     metadata:
     nonSecurePort: 80
-    preferIpAddress: ${USEHOSTNAME:false}
-    hostname: ${APPHOSTNAME}
+    preferIpAddress: ${USEHOSTNAME:true}
+#    hostname: ${APPHOSTNAME}
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   password: ${EUREKA_USER_PASSWORD:password}
